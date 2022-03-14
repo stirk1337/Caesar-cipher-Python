@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caesar cipher</title>
+	<link rel="stylesheet" href="static/secret_hf.css"></link>
+</head>
+<body>
+	
+	<div text-align = "right" class = "right">
+	<span text-align = "left ">{{ weather }} </span>
+	<a href="/viewlog-login">
+		Посмотреть логи 
+	</a>
+	|
+	<a href="/register">
+		Регистрация
+	</a>
+	</div>
+<h2>Добро пожаловать в шифр Цезаря!</h2>
+<form method='POST' action="/result">
+	<table>
+		<p>Используй эту форму, для функции шифра Цезаря</p>
+		<tr>
+			<td>Слово:</td>
+			<td><input name='word' type='TEXT' width="60" required pattern="^[a-zA-Z]+$"></td>
+		</tr>
+		<tr>
+			<td>Сдвиг:</td>
+			<td><input name='sdvig' type='TEXT' width="60" required pattern="^[0-9]+$"></td>
+		</tr>
+		<tr>
+			<td>C-ID:</td>
+			<td><input name='C-ID' type='TEXT' width="60" required pattern="^[ 0-9]+$"></td>
+		</tr>
+		<tr>
+			<td>Пароль:</td>
+			<td><input name='password' type='TEXT' width="60" required></td>
+		</tr>
+	</table>
+	<p>Когда будете готовы, жмякайте на кнопку:</p>
+	<p><button class="but" type = "SUBMIT">Жмяк!</button></p>
+</form>
+</body>
+</html>
